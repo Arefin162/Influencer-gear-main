@@ -11,6 +11,9 @@ main{
     padding-left: 5%;
     padding-top: 5%;
 }
+.head-center{
+    padding-left: 17%;
+}
 /* Frist product */
 .flex-display{
     display: flex;
@@ -81,13 +84,17 @@ footer fa-youtube{
     }
     .half-width{
         text-align: center;
+        padding-left: 5em;
     }
     .product{
-        margin-left: 4%;
+        margin-left: 6%;
     }
 }
 /*     -------   Tab --------------*/
 @media only screen and (min-width: 688px) and (max-width:992px) {
+    .head-center{
+        padding-left: 30px;
+    }
     .products {
         grid-template-columns: repeat(2, 1fr);
     }
