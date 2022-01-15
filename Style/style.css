@@ -1,4 +1,7 @@
 /* head */
+body{
+    margin: 0;
+}
 main{
     display: flex;
     justify-content: center;
@@ -24,6 +27,11 @@ main{
 }
 .Frist-right img{
     width: 100%;
+    padding-left: 10%;
+}
+.flex-display:hover .camera{
+    transform: rotate(360deg);
+    transition: transform 3s ease-in-out;
 }
 /* Popular Collection */
 .products{
@@ -49,12 +57,45 @@ main{
     text-align: end;
     font-weight: 700;
 }
-/* .far-fa{ */
-    /* display: flex; */
-/* } */
---------/* Ending */------------
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
+.fa-star{
+color: #FB8200;
+}
+/*----------------- Ending--------- */
+
+footer{
+    background-color: #0a0826;
     color: white;
+    text-align: center;   
+}
+footer fa-youtube{
+    color: white;
+    
+}
+/*-------------- mobile ------------- */
+@media only screen and (max-width:688px) {
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flex-display{
+        display: block;
+    }
+    .half-width{
+        text-align: center;
+    }
+    .product{
+        margin-left: 4%;
+    }
+}
+/*     -------   Tab --------------*/
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .half-width{
+        text-align: center;
+    }
+    .product{
+        margin-left: 4%;
+    }
+    
+}
