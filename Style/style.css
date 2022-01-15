@@ -25,3 +25,36 @@ main{
 .Frist-right img{
     width: 100%;
 }
+/* Popular Collection */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 30px;
+}
+.product{
+    width: 329px;
+    height: 476px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    padding-left: 1em;
+}
+.product .thumbil img{
+    width: 300px;
+    height: 256px;
+    margin-top: 17px;
+    margin-left: 5px;
+}
+.left-bar{
+    color: #E02C6D;
+    text-align: end;
+    font-weight: 700;
+}
+/* .far-fa{ */
+    /* display: flex; */
+/* } */
+--------/* Ending */------------
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
